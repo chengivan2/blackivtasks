@@ -7,7 +7,7 @@ export default async function SignedIn() {
   return (await isAuthenticated()) ? (
     <div>
       <p>Yay! Signed in.</p>
-      <LogoutLink>Log out</LogoutLink>
+      <LogoutLink><b>Log out</b></LogoutLink>
     </div>
   ) : (
     <div>
