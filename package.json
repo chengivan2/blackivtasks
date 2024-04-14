@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@kinde-oss/kinde-auth-nextjs": "^2.2.3",
+    "@vercel/speed-insights": "^1.0.10",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.1"
+    "eslint-config-next": "14.2.1",
+    "prisma": "^5.12.1"
   }
 }
