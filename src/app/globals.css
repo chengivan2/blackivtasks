@@ -5,13 +5,18 @@
   --extra-large-border-radius: 100px;
   --button-border-radius: 35px;
 
-  --background-start-rgb: hsl(197, 100%, 5%);
+  --background-start-rgb: hsl(300, 7%, 3%);
   --background-end-rgb: hsl(198, 100%, 8%);
   --main-text-color: hsl(0, 0%, 96%);
-  --secondary-text-color: hsl(0, 0, 80%);
+  --secondary-text-color: hsl(120, 4%, 91%);
 
-  --main-button-bg: hsl(213, 100%, 50%);
+  --main-button-bg: hsl(219, 100%, 47%);
   --secondary-button-bg: hsl(198, 100%, 5%);
+
+  --accent-color-one: hsl(213, 100%, 50%);
+  --accent-color-two: hsl(196, 100%, 47%);
+  --warm-color: hsl(44, 98%, 62%);
+  --danger-color: hsl(356, 74%, 52%);
 }
 
 * {
