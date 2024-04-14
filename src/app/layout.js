@@ -7,6 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Tasksly",
   description: "Manage your organization's tasks with lightning speed.",
+  openGraph: {
+    title: 'Tasksly',
+    description: "Manage your organization\'s tasks with lightning speed.",
+    url: 'https://blackivtasks.vercel.app',
+    siteName: 'Tasksly',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
