@@ -5,8 +5,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "BLACK IV Tasks",
-  description: "Manage your tasks quickly",
+  title: "Tasksly",
+  description: "Manage your organization's tasks with lightning speed.",
 };
 
 export default function RootLayout({ children }) {
