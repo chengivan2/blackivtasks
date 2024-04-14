@@ -15,7 +15,7 @@ export default async function SignedIn() {
       This page is protected, please <LoginLink><b>Login</b></LoginLink> to view it.
       </p>
       <p>
-      If you don't have an account, you can <RegisterLink><b>Sign Up</b></RegisterLink>.
+      If you don&apos;t have an account, you can <RegisterLink><b>Sign Up</b></RegisterLink>.
       </p>
     </div>
   );
