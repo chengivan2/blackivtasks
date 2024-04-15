@@ -23,7 +23,7 @@ export default function Homenotsigned() {
 
         <div className="hns-btns-divider">
           <hr />
-          <p>OR</p>
+          <p><b>OR</b></p>
           <hr />
         </div>
 

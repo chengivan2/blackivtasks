@@ -1,6 +1,7 @@
 import {
   getKindeServerSession,
   LoginLink,
+  LogoutLink,
 } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 import React from "react";
@@ -19,6 +20,9 @@ export default async function Homesigned() {
           Manage My Tasks
         </button>
       </Link>
+      <p>
+        Not your account? <LogoutLink>Logout</LogoutLink>
+      </p>
       <h4>Your Upcoming Tasks</h4>
     </div>
   ) : (
