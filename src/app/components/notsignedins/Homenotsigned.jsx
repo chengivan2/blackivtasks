@@ -1,19 +1,19 @@
+import React from 'react'
 import Link from "next/link";
-import React from "react";
 import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs";
-import "@/app/componentsStyles/notsigned.css"
+import "@/app/componentsStyles/homenotsigned.css"
 
-export default function Notsigned() {
+export default function Homenotsigned() {
   return (
-    <div className="ns-main-content">
-      <div className="ns-title-container">
-        <h2 className="ns-title">Hi there. Become a Tasksler NOW!</h2>
+    <div className="hns-main-content">
+      <div className="hns-title-container">
+        <h2 className="hns-title">Hi there. Become a Tasksler NOW!</h2>
       </div>
-      <div className="ns-paragrapgh-container">
-        <p className="ns-paragrapgh">
+      <div className="hns-paragrapgh-container">
+        <p className="hns-paragrapgh">
           You either need to
           <span>
-            <button className="ns-login-button">
+            <button className="hns-login-button">
               <LoginLink>Sign In</LoginLink>
             </button>
           </span>
@@ -25,18 +25,18 @@ export default function Notsigned() {
             <br />
           </span>
           <span>
-            <button className="ns-register-button">
+            <button className="hns-register-button">
               <RegisterLink>Sign Up</RegisterLink>
             </button>
           </span>
           to start tasking.
         </p>
       </div>
-      <div className="ns-contact-container">
+      <div className="hns-contact-container">
         <p>
           <Link>Contact</Link>
         </p>
       </div>
     </div>
-  );
+  )
 }
