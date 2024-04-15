@@ -20,7 +20,7 @@ export default async function Homesigned() {
           Manage My Tasks
         </button>
       </Link>
-      <p>
+      <p className="hs-log-out-text">
         Not your account? <LogoutLink>Logout</LogoutLink>
       </p>
       <h4>Your Upcoming Tasks</h4>

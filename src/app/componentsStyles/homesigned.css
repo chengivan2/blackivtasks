@@ -46,3 +46,12 @@
   background-color: var(--secondary-button-bg);
   font-size: medium;
 }
+
+.hs-log-out-text {
+  font-size: small;
+}
+
+.hs-log-out-text a {
+  text-decoration: underline !important;
+  color: var(--secondary-text-color);
+}
