@@ -23,13 +23,15 @@ export default function Homenotsigned() {
 
         <div className="hns-btns-divider">
           <hr />
-          <p><b>OR</b></p>
+          <p>
+            <b>OR</b>
+          </p>
           <hr />
         </div>
 
         <span>
           <RegisterLink>
-            <button className="hns-register-button hns-button">Sign UP</button>
+            <button className="hns-register-button hns-button">Sign Up</button>
           </RegisterLink>
           <br />
         </span>
@@ -43,7 +45,8 @@ export default function Homenotsigned() {
       </div>
       <div className="hns-contact-container">
         <p>
-          <Link href="/">Contact</Link>
+          Need help?
+          <Link href="/"> Contact us</Link>.
         </p>
       </div>
     </div>

@@ -70,9 +70,11 @@
   background-color: var(--secondary-button-bg);
 }
 
+.hns-contact-container {
+  font-size: small;
+}
 
 .hns-contact-container a {
   text-decoration: underline !important;
   color: var(--secondary-text-color) !important;
-  font-size: 18px;
 }
