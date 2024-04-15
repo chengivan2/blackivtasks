@@ -15,7 +15,7 @@ export default async function Home() {
       <Homesigned />
     </main>
   ) : (
-    <main style={styles.container}>
+    <main style={styles.main}>
       <Homenotsigned />
     </main>
   );
