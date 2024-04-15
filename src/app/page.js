@@ -3,7 +3,7 @@
 import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 import styles from "./page.module.css";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 
 export default function Home() {
@@ -19,10 +19,10 @@ export default function Home() {
   
     return () => {
     }
-  }, [user, router])
+  }, [isAuthenticated, router])
   
 
-  return (isAuthenticated()) ? (
+  return (isAuthenticated) ? (
     <main style={styles.container}>
       <div><p>Hi, {JSON.stringify(getUser(), null, 2)}</p></div>
     </main>
