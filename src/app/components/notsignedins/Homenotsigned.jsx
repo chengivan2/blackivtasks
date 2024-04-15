@@ -21,11 +21,11 @@ export default function Homenotsigned() {
           <br />
         </span>
 
-        <p className="hns-btns-divider">
+        <div className="hns-btns-divider">
           <hr />
-          OR
+          <p>OR</p>
           <hr />
-        </p>
+        </div>
 
         <span>
           <RegisterLink>
