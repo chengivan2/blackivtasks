@@ -53,5 +53,5 @@
 
 .hs-log-out-text a {
   text-decoration: underline !important;
-  color: var(--secondary-text-color);
+  color: var(--secondary-text-color) !important;
 }
