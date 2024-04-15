@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useContext, useState } from "react";
-import { TaskAddedContext } from "@/app/components/Taskmain";
+import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "@/app/componentsStyles/taskform.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,8 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 export default function Taskform() {
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
-
-  const { setTaskAdded } = useContext(TaskAddedContext);
 
   const notifyAdd = () => toast("Task added successfully!");
 
@@ -38,7 +35,6 @@ export default function Taskform() {
           `HTTP error! Status: ${response_from_create_api.status}`
         );
       } else {
-        setTaskAdded(true);
         notifyAdd();
       }
     } catch (error) {

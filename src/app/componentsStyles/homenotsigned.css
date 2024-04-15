@@ -1,17 +1,54 @@
 .hns-main-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 4rem;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  padding: 8%;
 }
 
 .hns-title {
   font-size: xx-large;
 }
 
+.hns-paragraph-container {
+  text-align: center;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 20px !important;
+}
+
+
+.hns-btns-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  color: var(--secondary-text-color) !important;
+ 
+}
+
+.hns-btns-divider hr {
+  min-width: 10%;
+  border: none;
+  border-top: 1px solid var(--secondary-text-color) !important;
+}
+
+.hns-login-button,
+.hns-register-button {
+  width: 60% !important;
+  border-radius: var(--medium-border-radius) !important;
+  font-size: 18px !important;
+}
+
 .hns-button {
   width: 50%;
+  border: none;
   border-radius: var(--button-border-radius);
   background-color: var(--main-button-bg);
   display: inline-flex;
@@ -30,4 +67,11 @@
   background-color: var(--secondary-button-bg);
   cursor: pointer;
   background-color: var(--secondary-button-bg);
+}
+
+
+.hns-contact-container a {
+  text-decoration: underline !important;
+  color: var(--secondary-text-color) !important;
+  font-size: 18px;
 }

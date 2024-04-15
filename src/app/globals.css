@@ -9,7 +9,7 @@
   --background-end-rgb: hsl(198, 100%, 8%);
 
   --main-text-color: hsl(0, 0%, 96%);
-  --heading-text-color: hsl(0, 0%, hsl(39, 77%, 83%));
+  --heading-text-color: hsl(39, 77%, 83%);
   --secondary-text-color: hsl(120, 4%, 48%);
 
   --main-button-bg: hsl(219, 100%, 47%);
@@ -47,6 +47,8 @@ h6 {
 }
 
 p,
+a,
 pre {
-  color: var(--main-text-color);
+  color: var(--main-text-color) !important;
+  text-decoration: none;
 }
