@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (isUserAuthenticated) ? (
     <main className={styles.main}>
-      <h2>Welcome, {userInfo}</h2>
+      <h2>Welcome, {userInfo.given_name}</h2>
       <Homesigned />
     </main>
   ) : (
