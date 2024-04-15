@@ -1,12 +1,13 @@
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+"use client";
 
+import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 import styles from "./page.module.css";
 import { useEffect } from "react";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 
-export default async function Home() {
-  const { isAuthenticated, getUser } = getKindeServerSession();
+export default function Home() {
+  const { isAuthenticated, getUser } = useKindeBrowserClient();
   const router = useRouter()
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default async function Home() {
   }, [user, router])
   
 
-  return (await isAuthenticated()) ? (
+  return (isAuthenticated()) ? (
     <main style={styles.container}>
       <div><p>Hi, {JSON.stringify(getUser(), null, 2)}</p></div>
     </main>
