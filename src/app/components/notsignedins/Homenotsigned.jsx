@@ -15,7 +15,7 @@ export default function Homenotsigned() {
         <p className="hns-paragraph">You either need to</p>
 
         <span>
-          <LoginLink>
+          <LoginLink postLoginRedirectURL="/">
             <button className="hns-login-button hns-button">Sign In</button>
           </LoginLink>
           <br />
