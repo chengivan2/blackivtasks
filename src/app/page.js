@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 
 export default function Home() {
-  const { isAuthenticated, getUser } = useKindeBrowserClient();
+  const { isAuthenticated, user } = useKindeBrowserClient();
   const router = useRouter()
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Home() {
 
   return (isAuthenticated) ? (
     <main style={styles.container}>
-      <div><p>Hi, {JSON.stringify(getUser(), null, 2)}</p></div>
+      <div><p>Hi, {JSON.stringify(user, null, 2)}</p></div>
     </main>
   ) : (
     <main style={styles.container}>
