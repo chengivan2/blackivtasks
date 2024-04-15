@@ -9,6 +9,7 @@
   --background-end-rgb: hsl(198, 100%, 8%);
 
   --main-text-color: hsl(0, 0%, 96%);
+  --heading-text-color: hsl(0, 0%, hsl(39, 77%, 83%));
   --secondary-text-color: hsl(120, 4%, 48%);
 
   --main-button-bg: hsl(219, 100%, 47%);
@@ -36,6 +37,16 @@ body {
   background-color: var(--background-start-rgb);
 }
 
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-text-color);
+}
+
+p,
+pre {
   color: var(--main-text-color);
 }
