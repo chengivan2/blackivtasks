@@ -1,18 +1,33 @@
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import Taskmain from "./components/Taskmain";
+
 import styles from "./page.module.css";
-import Notsigned from "./components/notsigned";
+import { useEffect } from "react";
+import { Router, useRouter } from "next/router";
+
 
 export default async function Home() {
-  const { isAuthenticated } = getKindeServerSession();
+  const { isAuthenticated, getUser } = getKindeServerSession();
+  const router = useRouter()
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      setTimeout(() => {
+        router.push('/add-tasks');
+      }, 8000); // Redirect after 8 seconds
+    }
+  
+    return () => {
+    }
+  }, [user, router])
+  
 
   return (await isAuthenticated()) ? (
     <main style={styles.container}>
-      <Taskmain />
+      <div><p>Hi, {JSON.stringify(getUser(), null, 2)}</p></div>
     </main>
   ) : (
     <main style={styles.container}>
-      <Notsigned />
+      <div>Hello</div>
     </main>
   );
 }
