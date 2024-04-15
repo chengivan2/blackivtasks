@@ -10,12 +10,12 @@ export default async function Home() {
   const userInfo = await getUser();
 
   return (isUserAuthenticated) ? (
-    <main style={styles.main}>
+    <main className={styles.main}>
       <h2>Welcome, {userInfo["first_name"]}</h2>
       <Homesigned />
     </main>
   ) : (
-    <main style={styles.main}>
+    <main className={styles.main}>
       <Homenotsigned />
     </main>
   );
