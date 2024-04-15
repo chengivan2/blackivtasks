@@ -9,7 +9,7 @@ export default function Homenotsigned() {
   return (
     <div className="hns-main-content">
       <div className="hns-title-container">
-        <h2 className="hns-title">Hi there. Become a Tasksler NOW!</h2>
+        <h2 className="hns-title">Hi there. Login or join other Taskslers NOW!</h2>
       </div>
       <div className="hns-paragraph-container">
         <p className="hns-paragraph">You either need to</p>
