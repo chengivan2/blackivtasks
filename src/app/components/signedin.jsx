@@ -6,7 +6,9 @@ import {
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 
 export default async function SignedIn() {
-  const { isAuthenticated } = getKindeServerSession();
+  const { isAuthenticated, getUser } = getKindeServerSession();
+
+  console.log(`The user is ${await getUser()}`);
 
   return (await isAuthenticated()) ? (
     <div>
