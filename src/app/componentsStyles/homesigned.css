@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .hs-main-content h3 {
@@ -11,7 +12,9 @@
 
 .manage-my-tasks-home-button {
   width: 50%;
-  border-radius: var(--button-border-radius);
+  outline: none;
+  border: none;
+  border-radius: var(--medium-border-radius);
   background-color: var(--main-button-bg);
   display: inline-flex;
   align-items: center;

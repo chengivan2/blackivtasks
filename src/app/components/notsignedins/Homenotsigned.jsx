@@ -15,9 +15,9 @@ export default function Homenotsigned() {
         <p className="hns-paragraph">You either need to</p>
 
         <span>
-          <button className="hns-login-button hns-button">
-            <LoginLink>Sign In</LoginLink>
-          </button>
+          <LoginLink>
+            <button className="hns-login-button hns-button">Sign In</button>
+          </LoginLink>
           <br />
         </span>
 
@@ -28,11 +28,12 @@ export default function Homenotsigned() {
         </p>
 
         <span>
-          <button className="hns-register-button hns-button">
-            <RegisterLink>Sign Up</RegisterLink>
-          </button>
+          <RegisterLink>
+            <button className="hns-register-button hns-button">Sign UP</button>
+          </RegisterLink>
           <br />
         </span>
+
         <p>
           <span>
             to view and manage your tasks.
