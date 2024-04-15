@@ -52,3 +52,7 @@ pre {
   color: var(--main-text-color) !important;
   text-decoration: none;
 }
+
+button {
+  border: none !important;
+}

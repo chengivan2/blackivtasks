@@ -32,6 +32,7 @@ export default async function Homesigned() {
       </LoginLink>
 
       <h4>Your Upcoming Tasks</h4>
+      <p>Your tasks will appear here once you are logged in.</p>
     </div>
   );
 }
