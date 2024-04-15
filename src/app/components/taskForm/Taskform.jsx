@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useContext, useState } from "react";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { TaskAddedContext } from "@/app/components/Taskmain";
 import * as Form from "@radix-ui/react-form";
 import "@/app/componentsStyles/taskform.css";
@@ -8,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Taskform() {
+  const { user } = useKindeBrowserClient();
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
@@ -51,6 +53,9 @@ export default function Taskform() {
 
   return (
     <div className="form-container">
+      <h4>User</h4>
+
+      <pre>{JSON.stringify(user, null, 2)}</pre>
       <Form.Root className="FormRoot" onSubmit={onSubmitForm}>
         <Form.Field className="FormField" name="taskname">
           <div
