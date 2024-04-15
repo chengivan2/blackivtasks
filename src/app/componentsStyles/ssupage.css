@@ -1,0 +1,33 @@
+.ssupage-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.ssupage-title {
+  font-size: xx-large;
+}
+
+.ssupage-button {
+  width: 50%;
+  border-radius: var(--button-border-radius);
+  background-color: var(--main-button-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 60px;
+  color: var(--main-text-color);
+  transition: 0.5s ease-in-out;
+}
+
+.ssupage-button:hover {
+  background-color: var(--secondary-button-bg);
+  cursor: pointer;
+  background-color: var(--secondary-button-bg);
+}
