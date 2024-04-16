@@ -5,12 +5,25 @@ import * as Form from "@radix-ui/react-form";
 import "@/app/componentsStyles/taskform.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+import Homenotsigned from "../notsignedins/Homenotsigned";
 
 export default function Taskform() {
+  const { user, isAuthenticated } = useKindeBrowserClient();
+  const userKindeId = user.id;
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
-  const notifyAdd = () => toast("Task added successfully!");
+  const notifyAddTodoMessage = (
+    <p>Your task has been added successfully! &#x1F389;!</p>
+  );
+
+  const notifyAddTodoErrorMessage = (
+    <p>There was an error! Please try adding again.</p>
+  );
+
+  const notifyAddTodo = () => toast.dark(notifyAddTodoMessage);
+  const notifyAddTodoError = () => toast.error(notifyAddTodoErrorMessage);
 
   const handleTaskNameChange = (e) => {
     setTaskName(e.target.value);
@@ -24,18 +37,19 @@ export default function Taskform() {
     e.preventDefault();
 
     try {
-      const response_from_create_api = await fetch("/api/create-todo", {
+      const response_from_create_api = await fetch("/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ taskName, taskDescription }),
+        body: JSON.stringify({ userKindeId, taskName, taskDescription }),
       });
 
       if (!response_from_create_api.ok) {
+        notifyAddTodoError();
         throw new Error(
           `HTTP error! Status: ${response_from_create_api.status}`
         );
       } else {
-        notifyAdd();
+        notifyAddTodo();
       }
     } catch (error) {
       console.error(error.message);
@@ -45,7 +59,7 @@ export default function Taskform() {
     setTaskDescription("");
   };
 
-  return (
+  return isAuthenticated ? (
     <div className="form-container">
       <h4>User</h4>
       <Form.Root className="FormRoot" onSubmit={onSubmitForm}>
@@ -101,5 +115,8 @@ export default function Taskform() {
       </Form.Root>
       <ToastContainer />
     </div>
+  ):
+  (
+    <Homenotsigned />
   );
 }
