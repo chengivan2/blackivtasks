@@ -1,7 +1,8 @@
 import React from 'react'
+import Taskform from './taskForm/Taskform'
 
 export default function Taskmain() {
   return (
-    <div>This is the main task page</div>
+    <Taskform />
   )
 }
