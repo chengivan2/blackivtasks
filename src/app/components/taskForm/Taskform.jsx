@@ -8,7 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { LoginLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Taskform() {
-  const { isAuthenticated } = useKindeBrowserClient();
+  const { isLoading, user, isAuthenticated } = useKindeBrowserClient();
+  const userKindeId = user.id;
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
@@ -38,7 +39,7 @@ export default function Taskform() {
       const response_from_create_api = await fetch("/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ taskName, taskDescription }),
+        body: JSON.stringify({ userKindeId, taskName, taskDescription }),
       });
 
       if (!response_from_create_api.ok) {
@@ -56,6 +57,8 @@ export default function Taskform() {
     setTaskName("");
     setTaskDescription("");
   };
+
+  if (isLoading) return <div><p>Hey there! Please be patient, we are fetching your data.</p></div>;
 
   return isAuthenticated ? (
     <div className="form-container">

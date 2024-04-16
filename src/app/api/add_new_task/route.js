@@ -1,17 +1,13 @@
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/dist/types/server";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 export async function POST(req, res) {
-  const { getUser } = getKindeServerSession();
-  const userInfo = await getUser();
-  const userKindeId = userInfo.id;
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const { name, description } = req.body;
+  const { userKindeId, name, description } = req.body;
 
   try {
     let user = await prisma.users.findUnique({
