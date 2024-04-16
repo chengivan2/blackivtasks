@@ -1,0 +1,28 @@
+"filename", "language", "JavaScript", "JavaScript JSX", "CSS", "Markdown", "JSON", "XML", "JSON with Comments", "Prisma", "SQL", "comment", "blank", "total"
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\.eslintrc.json", "JSON", 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\README.md", "Markdown", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 2, 5
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\jsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 1, 8
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\next.config.mjs", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 5
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\package-lock.json", "JSON", 0, 0, 0, 0, 6794, 0, 0, 0, 0, 0, 1, 6795
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\package.json", "JSON", 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 1, 29
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\prisma\migrations\20240414220758_init\migration.sql", "SQL", 0, 0, 0, 0, 0, 0, 0, 0, 27, 6, 9, 42
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\prisma\schema.prisma", "Prisma", 0, 0, 0, 0, 0, 0, 0, 33, 0, 2, 7, 42
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\public\next.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\public\vercel.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\api\auth\[kindeAuth]\route.js", "JavaScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\componentsStyles\homenotsigned.css", "CSS", 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 11, 81
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\componentsStyles\homesigned.css", "CSS", 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 7, 57
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\componentsStyles\ssupage.css", "CSS", 0, 0, 30, 0, 0, 0, 0, 0, 0, 0, 4, 34
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\componentsStyles\taskform.css", "CSS", 0, 0, 72, 0, 0, 0, 0, 0, 0, 2, 11, 85
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\componentsStyles\taskmain.css", "CSS", 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\components\Taskmain.jsx", "JavaScript JSX", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\components\notsignedins\Homenotsigned.jsx", "JavaScript JSX", 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 7, 56
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\components\signedins\Homesigned.jsx", "JavaScript JSX", 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 3, 42
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\components\successful-sign-up\page.jsx", "JavaScript JSX", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 2, 25
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\components\taskForm\Taskform.jsx", "JavaScript JSX", 0, 94, 0, 0, 0, 0, 0, 0, 0, 0, 12, 106
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\globals.css", "CSS", 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 11, 59
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\layout.js", "JavaScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 30
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\manage-tasks\page.jsx", "JavaScript JSX", 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\page.js", "JavaScript", 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 21
+"c:\Users\ADMIN\OneDrive\Desktop\nextjs\blackivtasks\blackivtasksapp\src\app\page.module.css", "CSS", 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"Total", "-", 48, 218, 283, 3, 6825, 2, 7, 33, 27, 11, 104, 7561
