@@ -5,8 +5,7 @@ import * as Form from "@radix-ui/react-form";
 import "@/app/componentsStyles/taskform.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
-import Homenotsigned from "../notsignedins/Homenotsigned";
+import { LoginLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Taskform() {
   const { user, isAuthenticated } = useKindeBrowserClient();
@@ -117,6 +116,6 @@ export default function Taskform() {
     </div>
   ):
   (
-    <Homenotsigned />
+    <p>You need to <LoginLink>Login</LoginLink></p>
   );
 }
