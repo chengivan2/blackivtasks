@@ -9,7 +9,7 @@ import { LoginLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Taskform() {
   const { user, isAuthenticated } = useKindeBrowserClient();
-  const userKindeId = user.id;
+  //const userKindeId = user.id;
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
@@ -39,7 +39,7 @@ export default function Taskform() {
       const response_from_create_api = await fetch("/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userKindeId, taskName, taskDescription }),
+        body: JSON.stringify({ taskName, taskDescription }),
       });
 
       if (!response_from_create_api.ok) {
