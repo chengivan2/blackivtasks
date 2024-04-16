@@ -8,8 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { LoginLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 export default function Taskform() {
-  const { user, isAuthenticated } = useKindeBrowserClient();
-  //const userKindeId = user.id;
+  const { isAuthenticated } = useKindeBrowserClient();
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
