@@ -1,6 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { NextApiRequest, NextApiResponse } from "next";
-import { getSession } from "next-auth/client";
 import { createKindeManagementAPIClient } from "@kinde-oss/kinde-auth-nextjs/server";
 
 const prisma = new PrismaClient();
