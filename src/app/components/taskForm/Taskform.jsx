@@ -1,14 +1,17 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 import "@/app/componentsStyles/taskform.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { LoginLink, useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+const DynamicKindeAuth = dynamic(() => import("@kinde-oss/kinde-auth-nextjs"), {
+  ssr: false,
+});
 
 export default function Taskform() {
-  const { isLoading, user, isAuthenticated } = useKindeBrowserClient();
+  const { isLoading, user, isAuthenticated } = DynamicKindeAuth.useKindeBrowserClient();
   const userKindeId = user.id;
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
@@ -58,7 +61,12 @@ export default function Taskform() {
     setTaskDescription("");
   };
 
-  if (isLoading) return <div><p>Hey there! Please be patient, we are fetching your data.</p></div>;
+  if (isLoading)
+    return (
+      <div>
+        <p>Hey there! Please be patient, we are fetching your data.</p>
+      </div>
+    );
 
   return isAuthenticated ? (
     <div className="form-container">
@@ -116,8 +124,9 @@ export default function Taskform() {
       </Form.Root>
       <ToastContainer />
     </div>
-  ):
-  (
-    <p>You need to <LoginLink>Login</LoginLink></p>
+  ) : (
+    <p>
+      You need to <DynamicKindeAuth.LoginLink>Login</DynamicKindeAuth.LoginLink>
+    </p>
   );
 }
