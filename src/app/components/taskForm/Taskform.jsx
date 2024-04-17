@@ -11,8 +11,7 @@ const DynamicKindeAuth = dynamic(() => import("@kinde-oss/kinde-auth-nextjs"), {
 });
 
 export default function Taskform() {
-  const { isLoading, user, isAuthenticated } = DynamicKindeAuth.useKindeBrowserClient();
-  const userKindeId = user.id;
+  const { isLoading, isAuthenticated } = DynamicKindeAuth.useKindeBrowserClient();
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
 
@@ -42,7 +41,7 @@ export default function Taskform() {
       const response_from_create_api = await fetch("/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userKindeId, taskName, taskDescription }),
+        body: JSON.stringify({ taskName, taskDescription }),
       });
 
       if (!response_from_create_api.ok) {
