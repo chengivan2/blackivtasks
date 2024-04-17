@@ -8,11 +8,8 @@ export async function POST(req, res) {
   const userInfo = kindClient.usersApi.getUserData();
   const userKindeId = (await userInfo).id;
   console.log((await userInfo).id);
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed" });
-  }
 
-  const { name, description } = req.body;
+  const { taskName, taskDescription } = req.body;
 
   try {
     let user = await prisma.users.findUnique({
@@ -33,8 +30,8 @@ export async function POST(req, res) {
     const newTodo = await prisma.todos.create({
       data: {
         userId: user.id,
-        name: name,
-        description: description,
+        name: taskName,
+        description: taskDescription,
       },
     });
 

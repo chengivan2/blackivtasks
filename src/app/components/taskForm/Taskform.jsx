@@ -1,5 +1,7 @@
 "use client";
 
+export const dynamic = 'force-dynamic'
+
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
@@ -38,7 +40,7 @@ export default function Taskform() {
     e.preventDefault();
 
     try {
-      const response_from_create_api = await fetch("/api/add_new_task", {
+      const response_from_create_api = await fetch("https://blackivtasks.vercel.app/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ taskName, taskDescription }),
