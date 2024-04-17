@@ -43,7 +43,7 @@ export default function Taskform() {
       const response_from_create_api = await fetch("https://blackivtasks.vercel.app/api/add_new_task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ taskName, taskDescription }),
+        body: { taskName, taskDescription },
       });
 
       if (!response_from_create_api.ok) {
